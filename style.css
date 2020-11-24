@@ -129,6 +129,15 @@ p {
   background-color: var(--color-grey);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url(imgs/homebackground.png) center/cover no-repeat;
@@ -332,23 +341,24 @@ p {
   justify-content: center;
 }
 
-.poject {
+.project {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 250px;
   margin: 2px;
-  background-color: lig var(--color-light-white);
+  background-color: var(--color-light-white);
 }
 
 .project__img {
   max-width: 100%;
   max-height: 100%;
+  align-self: center;
 }
 
-.poject__description {
+.project__description {
   position: absolute;
   background-color: var(--color-black);
   display: flex;
@@ -363,16 +373,16 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-.poject:hover .poject__description {
+.project:hover .poject__description {
   opacity: 0.8;
   transform: translateY(0px);
 }
 
-.poject__description h3 {
+.project__description h3 {
   color: var(--color-white);
 }
 
-.poject__description h3:after {
+.project__description h3:after {
   content: '';
   display: block;
   position: relative;
@@ -435,7 +445,7 @@ p {
   background-color: var(--color-pink);
 }
 
-.contact__title, 
+.contact__title, ß
 .contact__email,
 .contact__rights {
   color: var(--color-white);
@@ -456,4 +466,44 @@ p {
   color: var(--color-yellow);
 }
 
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skiilset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avata {
+    width: 80px;
+    height: 80px;
+  }
+
+}
 
