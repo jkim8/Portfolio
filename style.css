@@ -11,6 +11,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
+  --color-dark-blue: #214b58;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -111,7 +112,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-blue);
   padding: 8px;
 }
 
@@ -140,8 +141,8 @@ p {
 }
 
 .navbar__menu__item:hover {
-  border: 1px solid var(--color-white);
-  background-color: var(--color-grey);
+  border: 1px solid var(--color-blue);
+  background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -186,7 +187,7 @@ p {
 
 .home__contact:hover{
   background-color: var(--color-white);
-  color: var(--color-pink);
+  color: var(--color-blue);
 }
 
 /* Section common */
@@ -230,7 +231,7 @@ p {
 
 .major__title, 
 .major__description {
-  color: var(--color-dark-grey);
+  color: var(--color-dark-blue);
 }
 
 .major__description {
@@ -302,7 +303,7 @@ p {
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-blue);
   padding: 20px 40px;
 }
 
@@ -470,13 +471,13 @@ p {
 }
 
 .testimonial__speech-bubble a {
-  color: var(--color-pink);
+  color: var(--color-blue);
 }
 
 /* Contact */
 
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
 }
 
 .contact__title, 
@@ -497,7 +498,7 @@ p {
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: var(--color-dark-blue);
 }
 
 /* Scroll */
@@ -506,7 +507,7 @@ p {
   bottom: 50px;
   right: 50px;
   font-size: 50px;
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   color: var(--color-white);
   border-radius: 50%;
   width: 70px;
@@ -542,7 +543,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-dark-blue);
   }
 
   #navbar.navbar--dark {
